@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="reports.css">
+<style>
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+}
+*{
+    font-family: sans-serif;
+    text-align: justify;
+}
+select{
+    width: 150px;
+    margin-bottom: 10px;
+}
+input{
+    margin-bottom: 20px;
+}
+.label{
+    font-weight: 800;
+    font-size: 16px;
+    color: grey;
+}
+.spc{
+    margin-bottom: 18px;
+}
+.container1{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tbl{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 60%;
+}
+.content{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: gray;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 15px;
+    margin: 5px;
+
+}
+.options{
+    display: flex;
+    padding: 5%;
+    background-color: white;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+.on{
+    margin-right: 20px;
+}
+.spacebtw{
+    display: flex;
+    justify-content: space-between;
+}
+.spacelft{
+    width: 150px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.result{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0.5%;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    width: 40%;
+}
+.rtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px;
+    background-color: #000000b8;
+    color: white;
+    font-weight: 400;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 33px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 480px) {
+    .tbl{
+        width: 100vw;
+        padding: 5%;
+    }
+    .options{
+        flex-direction: column;
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="container1">
+        <div class="tbl">
+            <div class="content">
+                <div class="title bottom-arrow">
+                    Reports Dashboard
+                </div>
+                <div class="options">
+                    <div class="on">
+                        <div class="label"><label for="Report On:">Report On:</label></div>
+                        <br>
+                        <div>
+                            <input type="checkbox"> All Positions
+                        </div>
+                        <div>
+                            <input type="checkbox"> Open Positions
+                        </div>
+                        <div>
+                            <input type="checkbox"> Filled Positions
+                        </div>
+                        <div>
+                            <input type="checkbox"> Closed Positions
+                        </div>
+                    </div>
+                    <div class="on">
+                        <div class="spacelft">
+                        <div class="label spc"><label for="Rfor:">Report For:</label></div>
+                        </div>
+                        <div class="spacebtw">
+                            <div class="spacelft">
+                                Company
+                            </div>
+                                <select name="company" id="">
+                                <option value="">All Companies</option>
+                            </select>
+                        </div>
+                        <div class="spacebtw">
+                            <div class="spacelft">
+                                Business Unit
+                            </div>
+                            <select name="company" id="">
+                                <option value="">All Business Units</option>
+                            </select>
+                        </div>
+                        <div class="spacebtw">
+                            <div class="spacelft">
+                                Departments
+                            </div>
+                            <select name="company" id="">
+                                <option value="">All Departments</option>
+                            </select>
+                        </div>
+                        <div class="spacebtw">
+                            <div class="spacelft">
+                                Recruiter
+                            </div>
+                            <select name="company" id="">
+                                <option value="">All Recruiters</option>
+                            </select>
+                        </div>
+                        <div class="spacebtw">
+                            <div class="spacelft">
+                                Recruiter's Position
+                            </div>
+                            <select name="company" id="">
+                                <option value="">CEO</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="on">
+                        <div>
+                            <div class="label"><label for="">Report From:</label></div>
+                            <br>
+                            <input type="date">
+                        </div>
+                        <div>
+                            <div class="label"><label for="">Report To:</label></div>
+                            <br>
+                            <input type="date">
+                        </div>
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="box">
+                        <div class="rtitle">
+                            Total Number of Positions
+                        </div>
+                        <div class="rating">
+                            27
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="rtitle">
+                            Total Number of Candidates
+                        </div>
+                        <div class="rating">
+                            150
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="rtitle">
+                            Average Number of Candidates per Position
+                        </div>
+                        <div class="rating">
+                            4.92
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="rtitle">
+                            Total Number of Interviews Conducted
+                        </div>
+                        <div class="rating">
+                            133
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="rtitle">
+                            Average Number of Interviews per Candidate
+                        </div>
+                        <div class="rating">
+                            3.14
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="rtitle">
+                            Average Candidate Rating
+                        </div>
+                        <div class="rating">
+                            2.35
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

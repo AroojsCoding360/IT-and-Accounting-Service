@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+<style>
+body{
+  margin-left: 0%;
+  margin-bottom: 0%;
+  margin-right:0%;
+  font-family: Arial, sans-serif;
+}
+ /* 1% black background with white text */
+    .top-section {
+      background-color: black;
+      color: white;
+      text-align: center;
+      text-align: left;
+      padding: 0 8%;
+    }
+     .icon {
+    margin-left: 800px;
+    margin-right: 2px;
+
+  }
+    /* 5% blue background with white text */
+    .navigation, footer {
+      background-color: rgb(45, 92, 146);
+      color: white;
+      text-align: center;
+      padding: 1% 0;
+    }
+
+    /* Navigation links */
+    .navigation a, .footer a{
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 18px;
+    }
+label{
+  margin-left: 170px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+input{
+  border: 1px solid rgb(123, 122, 122);
+  display: block;
+  margin-left: 300px;
+  width: 300px;
+  height: 29px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+label.required::after {
+      content: ' *';
+      color: red;
+    }
+  img{
+    position: absolute;
+      top: 92%;
+      left: 65%;
+      transform: translate(-50%, -50%);
+  }
+  .info{
+    position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+    }
+    @media screen and (max-width: 768px) {
+            label,
+            input {
+                margin-left: 10%;
+                width: 80%;
+            }
+
+            img {
+                top: 85%;
+            }
+
+            .info {
+                top: 40%;
+            }
+        }
+
+  </style>
+</head>
+<body>
+<div class="top-section">
+    Call Now: 00912-5133-93390
+    <img src="twIcon.jpg" alt="Twitter" class="icon">
+    <img src="fbIcon.jpg" alt="Facebook">
+    <img src="gmailIcon.jpg" alt="Gmail">
+    <img src="linkedInIcon.jpg" alt="Linkedin">
+  </div>
+
+  <div class="navigation">
+    <a href="home.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="reports.html">Reports</a>
+    <a href="contact.html">Contact us</a>
+  </div>
+
+<p style="background-color: rgb(73, 136, 190);font-size: 30px;padding: 5px;padding-left: 170px;margin-top: -18px; color:white;" >Contact Us</p>
+<h1 style="margin-left: 170px;color: rgb(7, 7, 82);">Get In Touch</h1>
+<P style="margin-left: 170px;"><span style="color:rgb(123, 118, 118)">To deliver timely and high quality accounting, auditing and consultancy services to our clients by understanding their requirements, providing individual and special attention and maintaining highest level of professional ethical standards.</span></P>
+<p style="margin-left: 170px; margin-bottom: 20px;"><b>Please fill this form for quick contact</b></p>
+
+
+<label for="name" class="required" >Full Name:</label>
+<input type="text" id="name" name="name"><br>
+<label for="email" class="required">Email Address:</label>
+<input type="email" id="email" name="email"><br>
+<label for="phone" >Telephone:</label>
+<input type="tel" id="tel" name="tel"><br>
+<label for="text" class="required">Subject:</label>
+<input type="text" id="text" name="text"><br>
+<label for="text" class="required">Your Enquiry:</label>
+<input type="text" id="text2" name="text2" style="height: 100px;"><br>
+
+<button style="background-color: rgb(45, 92, 146);color: rgb(255, 255, 255); border-radius: 5px;padding: 12px;padding-left: 17px;padding-right: 17px; border: none; margin-left:300px; ">Submit</button><br>
+<img src="map.jpg">
+<p class="info">ABC & Company<br> IT and Accounting Services<br><span style="color:rgb(123, 118, 118)">UMT Road, UMT,PO Box 54000<br>Lahore, Pakistan<br>Phone: 03249871568<br>Fax:00912-4-45622289</span><br><span style="color: red;"> info@abc.com</p></span>
+
+</div>
+<div class="footer" style="border: none;background-color: rgb(45, 92, 146); text-align: left;">
+  <a href="home.html" style="margin-left: 50px">Home</a>
+    <a href="services.html" style="margin-left: 10px">Services</a>
+    <a href="reports.html" style="margin-left: 10px">Reports</a>
+    <a href="contact.html" style="margin-left: 10px">Contact us</a>
+  <p style="margin-left: 90px; color:white;">@All Rights Reserved.
+   <img src="twIcon.jpg" alt="Twitter" class="icon">
+    <img src="fbIcon.jpg" alt="Facebook">
+    <img src="gmailIcon.jpg" alt="Gmail">
+    <img src="linkedInIcon.jpg" alt="Linkedin">
+</div>
+
+</body>
+</html>
